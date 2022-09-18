@@ -1,0 +1,68 @@
+<html>
+<head>
+
+<title>
+exercise2_dine_booking.html
+</title>
+<script>
+function func(){
+var name=document.f.vname.value;
+var num=parseInt(document.f.vnum.value);
+if(name.length>=20){
+window.alert("The Vistor name length is maximum than 20 Characters");
+return false;
+}
+if(num>100){
+window.alert("No of vistors are More than a two digit Number");
+return false;
+}
+return true;
+}
+</script>
+<body align="center">
+<h3 align="center">Dine Booking</h3>
+<table align="center">
+<form name="f" onsubmit="return func()">
+<tr>
+<td>Visitor Name:</td>
+<td><input type="text" name="vname" autofocus></td>
+</tr>
+<td>Number Of members:</td>
+<td><input type="number" name="vnum"></td>
+</tr>
+<tr>
+<td>Contact Number:</td>
+<td><input type="tel"></td>
+</tr><tr>
+<td>Email:</td>
+<td><input type="email" ></td>
+</tr>
+<tr>
+<td>Type of food:</td>
+<td><input type="checkbox" name="South-Indian" value="South-Indian" checked>South-Indian
+<input type="checkbox" name="North-Indian" value="North-Indian">North_Indian
+<input type="checkbox" name="Chinese" value="Chinese">Chinese
+<input type="checkbox" name="Western" value="Western">Western<br></td>
+</tr>
+<tr>
+<td>Room status:</td>
+<td><input type="radio" name="room" value="Ac" checked>Ac
+<input type="radio" name="room" value="Non-Ac">Non-Ac</td></tr>
+<tr>
+<td>Venue Preference:</td>
+<td><select value="">
+<option> </option>
+<option>Arena</option>
+<option>Fiesta</option>
+<option>Vista</option>
+<option>Mythri</option>
+<option>Manga</option>
+<option>Oasis</option>
+<option disabled>Amoeba</option>
+</select></td><br><br></tr><tr>
+<td><input type="submit" value="Book"></td>
+<td><input type="reset" value="Reset"></td></tr>
+</table
+</form>
+</body>
+<html>

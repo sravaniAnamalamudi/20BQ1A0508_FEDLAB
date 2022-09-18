@@ -1,0 +1,56 @@
+<html>
+<head>
+
+<title>
+exercise1_dine_booking.html
+</title>
+<script>
+function func(){
+var name=document.f.vname.value;
+var num=parseInt(document.f.vnum.value);
+if(name.length>=20){
+window.alert("The Vistor name length is maximum than 20 Characters");
+return false;
+}
+if(num>100){
+window.alert("No of vistors are More than a two digit Number");
+return false;
+}
+return true;
+}
+</script>
+<body align="center">
+<h3 align="center">Dine Booking</h3>
+<form name="f" onsubmit="return func()">
+<label>Visitor Name
+<input type="text" name="vname" autofocus maxlength=20><br>
+<label>Number Of members:
+<input type="number" name="vnum"><br>
+<label>Contact Number:
+<input type="tel"><br>
+<label>Email
+<input type="email" ><br>
+<label>Type of food:
+<input type="checkbox" name="South-Indian" value="South-Indian" checked>South-Indian
+<input type="checkbox" name="North-Indian" value="North-Indian">North_Indian
+<input type="checkbox" name="Chinese" value="Chinese">Chinese
+<input type="checkbox" name="Western" value="Western">Western<br>
+<label>Room status:
+<input type="radio" name="room" value="Ac" checked>Ac
+<input type="radio" name="room" value="Non-Ac">Non-Ac<br>
+<label>Venue Preference:
+<select value="">
+<option> </option>
+<option>Arena</option>
+<option>Fiesta</option>
+<option>Vista</option>
+<option>Mythri</option>
+<option>Manga</option>
+<option>Oasis</option>
+<option disabled>Amoeba</option>
+</select><br><br>
+<input type="submit" value="Book">
+<input type="reset" value="Reset">
+</form>
+</body>
+<html>
